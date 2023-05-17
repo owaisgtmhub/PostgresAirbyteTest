@@ -16,7 +16,7 @@ SELECT
     (_AIRBYTE_DATA->'fields'->'project'->'name')::varchar as project_name,
     (_AIRBYTE_DATA->'fields'->'project'->'id')::varchar as project_id,
     (_AIRBYTE_DATA->'fields'->'priority'->'name')::varchar as priority,
-    (_AIRBYTE_DATA->'fields'->'labels')::ARRAY as labels,
+    (_AIRBYTE_DATA->'fields'->'labels')::text as labels,
     (_AIRBYTE_DATA->'fields'->'issuetype'->'name')::varchar as issue_type,
     (_AIRBYTE_DATA->'fields'->'creator'->'emailAddress')::varchar as creator,
     (_AIRBYTE_DATA->'fields'->'assignee'->'emailAddress')::varchar as assignee
