@@ -11,7 +11,6 @@ SELECT
     (_AIRBYTE_DATA->>'self')::text as url,
     (_AIRBYTE_DATA->'fields'->'summary')::text as summary,
     (_AIRBYTE_DATA->'fields'->'status'->'name')::varchar as status,
-    (_AIRBYTE_DATA->'fields'->'reporter'->'emailAddress')::varchar as status,
     (_AIRBYTE_DATA->'fields'->'reporter'->'emailAddress')::varchar as reporter,
     (_AIRBYTE_DATA->'fields'->'project'->'name')::varchar as project_name,
     (_AIRBYTE_DATA->'fields'->'project'->'id')::varchar as project_id,
