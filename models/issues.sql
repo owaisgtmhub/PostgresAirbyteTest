@@ -21,4 +21,4 @@ SELECT
     (_AIRBYTE_DATA->'fields'->'assignee'->'emailAddress')::varchar as assignee
 
     FROM
-  airbyte.airbyte._airbyte_raw_issues
+  athena_warehouse.jira._airbyte_raw_issues
